@@ -7,9 +7,9 @@ class Bacteria
     myX = x;
     myY = y;
     if(dist(myX, myY, mouseX, mouseY) > 5)
-      myColor = color(255, 0, 0);
+      myColor = color(120, 0, 220);
     else
-      myColor = color(0, 0, 0);
+      myColor = color(0, 131, 0);
   }
   Bacteria(){
     mySize = 10;
@@ -24,9 +24,9 @@ class Bacteria
   void show()
   {
     if(dist(myX, myY, mouseX, mouseY) > 5)
-      fill(255, 0, 0);
+      fill(120, 0, 220);
     else
-      fill(0, 0, 0);
+      fill(0, 131, 0);
       
     ellipse(myX, myY, mySize, mySize);
   }
@@ -65,7 +65,7 @@ class Bacteria
 Bacteria bob, bobJr, bobIII, bobIV;
 void setup()
 {
-  background(0);
+  background(0,30,200);
   size(1000, 1000);
   bob = new Bacteria((int)(Math.random()*1000), (int)(Math.random()*1000), 25);
   bobthesecond = new Bacteria((int)(Math.random()*1000), (int)(Math.random()*1000), 25);
@@ -74,7 +74,7 @@ void setup()
 }
 void draw(){
   background(0);
-  fill(255);  
+  fill(0,255,0);  
   bob.runaway();
   bobthesecond.runaway();
   bobthethird.runaway();
